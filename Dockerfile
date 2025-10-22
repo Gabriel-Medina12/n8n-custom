@@ -14,9 +14,3 @@ USER node
 # Exponer puerto
 EXPOSE 5678
 ```
-
-**`.dockerignore`:**
-```
-.git
-.gitignore
-README.md
