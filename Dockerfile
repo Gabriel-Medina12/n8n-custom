@@ -2,15 +2,13 @@ FROM n8nio/n8n:latest
 
 USER root
 
-# Instalar FFmpeg y Python para edge-tts
+# Instalar FFmpeg, Python y gTTS
 RUN apk add --no-cache \
     ffmpeg \
     python3 \
     py3-pip \
-    && pip3 install --break-system-packages edge-tts
+    && pip3 install --break-system-packages gTTS
 
 USER node
 
-# Exponer puerto
 EXPOSE 5678
-
